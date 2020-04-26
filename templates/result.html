@@ -1,0 +1,15 @@
+{% extends "home.html" %}
+{% block content %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<div class="container">
+	{% if prediction == 1%}
+	<div class="alert alert-danger" role="alert">
+		<h5>Satirical content</h5>
+	  </div>
+	{% elif prediction == 0%}
+	<div class="alert alert-success" role="alert">
+		<h5>Real News</h5>
+	  </div>
+	{% endif %}
+	</div>
+{%endblock%}
