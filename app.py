@@ -11,9 +11,6 @@ model = pickle.load(open('model.pkl','rb'))
 def home():
 	return render_template('home.html')
 
-@app.route('/multinomialNB')
-def multinomialNB():
-    return render_template('multiNB.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
